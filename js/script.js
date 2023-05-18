@@ -104,12 +104,13 @@ function handlePokeData({ name, sprites: { versions } }) {
   img.src = versions['generation-v']['black-white'].animated.front_shiny
   // div.appendChild(p)
   // div.appendChild(img)
-  div.append(p,img)
+  div.append(p, img)
   document.querySelector('.aside').appendChild(div)
 
-  div.addEventListener('click', ()=> div.remove())
+  div.addEventListener('click', () => div.remove())
 }
 
 document.querySelector('.aside').style.display = 'flex'
 document.querySelector('.aside').style.flexWrap = 'wrap'
-document.querySelector('.aside').style.columnGap = '10px'
+document.querySelector('.aside').style.columnGap = '50px'
+document.querySelector('.aside').style.justifyContent = 'space-around'
