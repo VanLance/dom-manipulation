@@ -5,6 +5,7 @@ const button = document.createElement('button')
 button.id = 'dark-mode'
 
 const body = document.getElementsByTagName('body')[0]
+body.style.padding = '1rem 5%'
 
 body.appendChild(button)
 
@@ -66,6 +67,7 @@ for (let [i, student] of studentArray2.entries()) {
  take api data and sent to html */
 
 const pokemonApi = document.querySelector('#pokemon-api')
+pokemonApi.style.marginLeft = '30%'
 // const pokemonApi2 = document.getElementById('pokemon-api')
 
 pokemonApi.addEventListener('submit', async (event) => {
