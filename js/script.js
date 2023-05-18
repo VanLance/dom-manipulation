@@ -10,7 +10,8 @@ body.style.padding = '1rem 5%'
 body.appendChild(button)
 
 button.innerText = "Dark Mode"
-let buttonClick = 0
+button.style.marginTop = '1rem'
+
 button.addEventListener('click', () => {
   if (button.innerText === 'Dark Mode') {
     darkMode()
