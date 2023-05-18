@@ -110,3 +110,6 @@ function handlePokeData({ name, sprites: { versions } }) {
   div.addEventListener('click', ()=> div.remove())
 }
 
+document.querySelector('.aside').style.display = 'flex'
+document.querySelector('.aside').style.flexWrap = 'wrap'
+document.querySelector('.aside').style.columnGap = '10px'
